@@ -1,4 +1,4 @@
-const script = require('../src/script');
+const script = require('../src/index');
 var sum = script.method1;
 var sub = script.method2;
 var mult = script.method3;
