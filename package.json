@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --mode development",
     "dist": "webpack --mode production --progress --profile",
     "lint": "eslint .",
-    "jest": "jest", 
+    "jest": "jest",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "jest": {
