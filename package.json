@@ -1,13 +1,13 @@
 {
-  "name": "test1",
+  "name": "jest-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "dist": "webpack --mode production --progress --profile",
-    "lint": "eslint .",
-    "jest": "jest",
+    "test": "jest",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "jest": {
@@ -19,27 +19,12 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.11.0",
-    "@typescript-eslint/parser": "^2.11.0",
-    "ava": "^2.4.0",
-    "eslint": "^6.7.2",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.19.1",
-    "jest": "^24.9.0",
-    "webpack": "^4.41.2",
-    "webpack-dev-server": "^3.9.0"
-  },
   "dependencies": {
-    "@babel/core": "^7.7.5",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "save-dev": "0.0.1-security"
+  },
+  "devDependencies": {
     "coveralls": "^3.0.9",
-    "eslint-loader": "^3.0.3",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "save": "^2.4.0",
-    "webpack-cli": "^3.3.10"
+    "jest": "^24.9.0"
   }
 }
