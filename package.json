@@ -9,6 +9,13 @@
     "lint": "eslint .",
     "jest": "jest"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!data/keyMap.js",
+      "!/node_modules/"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
