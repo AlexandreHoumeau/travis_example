@@ -1,19 +1,36 @@
 {
-  "name": "travis",
+  "name": "test1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexandreHoumeau/travis_example.git"
+    "start": "webpack-dev-server --mode development",
+    "dist": "webpack --mode production --progress --profile",
+    "lint": "eslint .",
+    "jest": "jest"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlexandreHoumeau/travis_example/issues"
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "ava": "^2.4.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "jest": "^24.9.0",
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.9.0"
   },
-  "homepage": "https://github.com/AlexandreHoumeau/travis_example#readme"
+  "dependencies": {
+    "@babel/core": "^7.7.5",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "coveralls": "^3.0.9",
+    "eslint-loader": "^3.0.3",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack-cli": "^3.3.10"
+  }
 }
